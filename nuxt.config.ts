@@ -4,7 +4,7 @@ import { ManifestV2 } from "@uniformdev/context";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: ["~/styles/global.css"],
-  modules: ["@uniformdev/uniform-nuxt", "nuxt-security"],
+  modules: ["@uniformdev/uniform-nuxt"],
   uniform: {
     projectId: process.env.UNIFORM_PROJECT_ID,
     readOnlyApiKey: process.env.UNIFORM_API_KEY,
