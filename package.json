@@ -1,0 +1,44 @@
+{
+  "name": "@uniformdev/nuxtjs-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "run-s download:manifest nuxt:dev",
+    "nuxt:dev": "nuxt dev",
+    "build": "run-s download:manifest nuxt:build",
+    "nuxt:build": "nuxt build",
+    "generate": "nuxt generate",
+    "download:manifest": "uniform context manifest download --output ./lib/uniform/contextManifest.json",
+    "uniform:pull:signals": "uniform context signal pull ./content/signals",
+    "uniform:pull:components": "uniform canvas component pull ./content/components",
+    "uniform:pull:compositions": "uniform canvas composition pull ./content/compositions",
+    "uniform:pull": "run-s uniform:pull:signals uniform:pull:components uniform:pull:compositions",
+    "uniform:push:signals": "uniform context signal push ./content/signals",
+    "uniform:push:components": "uniform canvas component push ./content/components",
+    "uniform:push:compositions": "uniform canvas composition push ./content/compositions",
+    "uniform:publish": "uniform canvas composition push ./content/compositions --state published",
+    "uniform:push": "run-s uniform:push:signals uniform:push:components uniform:push:compositions",
+    "start": "nuxt start",
+    "start:stackblitz": "npm install && nuxt dev",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@uniformdev/cli": "^19.48.0",
+    "npm-run-all": "4.1.5",
+    "nuxt": "^3.5.3",
+    "vue": "^3.3.4"
+  },
+  "dependencies": {
+    "@uniformdev/canvas": "^19.48.0",
+    "@uniformdev/canvas-vue": "^19.48.0",
+    "@uniformdev/context": "^19.48.0",
+    "@uniformdev/context-vue": "^19.48.0",
+    "@uniformdev/project-map": "^19.48.0",
+    "@uniformdev/uniform-nuxt": "^19.48.0",
+    "nuxt-security": "^0.14.4"
+  },
+  "stackblitz": {
+    "startCommand": "npm run start:stackblitz",
+    "compileTrigger": "save"
+  }
+}
