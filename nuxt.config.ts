@@ -7,9 +7,9 @@ export default defineNuxtConfig({
   modules: ["@uniformdev/uniform-nuxt", "nuxt-security"],
   security: {
     headers: {
-      crossOriginResourcePolicy: '',
+      crossOriginResourcePolicy: 'cross-origin',
       contentSecurityPolicy: {
-        'frame-ancestors': ["'self', https://uniform.app"],
+        'frame-ancestors': ["'self' https://uniform.app"],
       },
       xFrameOptions: '',
       referrerPolicy: 'origin-when-cross-origin',
