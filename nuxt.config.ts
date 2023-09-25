@@ -12,7 +12,6 @@ export default defineNuxtConfig({
       contentSecurityPolicy: {
         'frame-ancestors': ["'self' https://uniform.app"],
       },      
-      referrerPolicy: 'origin-when-cross-origin',
     }
   },
   uniform: {
