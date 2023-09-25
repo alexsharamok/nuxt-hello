@@ -11,6 +11,7 @@ export default defineNuxtConfig({
         'frame-ancestors': ["'self', https://uniform.app"],
       },
       xFrameOptions: '',
+      referrerPolicy: 'origin-when-cross-origin',
     }
   },
   uniform: {
