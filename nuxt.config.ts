@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       contentSecurityPolicy: {
-        'frame-ancestors': ["'self', 'https://uniform.app'"],
+        'frame-ancestors': ["'self', https://uniform.app"],
       }
     }
   },
