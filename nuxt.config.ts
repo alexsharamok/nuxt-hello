@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   security: {
     headers: {
       crossOriginResourcePolicy: 'cross-origin',
+      crossOriginEmbedderPolicy: '',
       contentSecurityPolicy: {
         'frame-ancestors': ["'self' https://uniform.app"],
       },
