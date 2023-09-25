@@ -11,8 +11,7 @@ export default defineNuxtConfig({
       crossOriginEmbedderPolicy: '',
       contentSecurityPolicy: {
         'frame-ancestors': ["'self' https://uniform.app"],
-      },
-      xFrameOptions: '',
+      },      
       referrerPolicy: 'origin-when-cross-origin',
     }
   },
