@@ -29,12 +29,14 @@
     "vue": "^3.3.4"
   },
   "dependencies": {
-    "@uniformdev/canvas": "^19.48.0",
-    "@uniformdev/canvas-vue": "^19.48.0",
-    "@uniformdev/context": "^19.48.0",
-    "@uniformdev/context-vue": "^19.48.0",
-    "@uniformdev/project-map": "^19.48.0",
-    "@uniformdev/uniform-nuxt": "^19.48.0",
+    "@uniformdev/canvas": "^19.83.0",
+    "@uniformdev/canvas-contentstack": "^19.59.0",
+    "@uniformdev/canvas-vue": "^19.83.0",
+    "@uniformdev/context": "^19.83.0",
+    "@uniformdev/context-vue": "^19.83.0",
+    "@uniformdev/project-map": "^19.83.0",
+    "@uniformdev/uniform-nuxt": "^19.83.0",
+    "contentstack": "^3.17.2",
     "nuxt-security": "^0.14.4"
   },
   "stackblitz": {
